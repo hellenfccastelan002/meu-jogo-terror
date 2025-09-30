@@ -4,6 +4,7 @@ const gameOverScreen = document.getElementById("game-over-screen");
 const scoreElement = document.querySelector(".score span");
 const monstro = document.querySelector(".monstro");
 const startButton = document.getElementById("startButton"); 
+alert("O JavaScript está funcionando!");
 
 audioStart = new Audio("./sound/audio_theme.mp3");
 const gameOverSound = new Audio("./sound/audio_gameover.mp3");

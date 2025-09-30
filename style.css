@@ -48,28 +48,19 @@
     animation: jump 500ms ease-out;
 }
 
-button {
-    background: rgb(0, 0, 0);
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    border: none;
-    padding: 1rem;
+.start-image {
+    width: 150px;
+    height: auto;
     position: absolute;
     right: 50vw;
     top: 50vh;
+    transform: translate(50%, -50%);
     cursor: pointer;
     z-index: 1;
 }
 
-button:hover {
-    border: 2px solid rgb(0, 0, 0);
-    background: none;
-    color: rgb(0, 0, 0);
-}
-
 button.start {
-    display: block;
+    display: none;
 }
 
 .score {

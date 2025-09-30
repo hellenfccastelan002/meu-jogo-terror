@@ -27,11 +27,8 @@ gameOverScreen.addEventListener('click', restartGame);
 
 
 const handleGameOver = (objectPosition, marioCurrentPosition) => {
-    // Para as animações dos objetos
     pipe.style.animation = "none";
     pipe.style.left = `${objectPosition.pipe}px`; 
-
-    // NUVEM REMOVIDA: nuvem.style.animation = "none"; 
 
     mario.style.animation = "none";
     mario.style.left = `${marioCurrentPosition}px`; 

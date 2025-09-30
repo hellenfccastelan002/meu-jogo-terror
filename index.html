@@ -8,9 +8,16 @@
 </head>
 <body>
     <div class="game-board">
-        <img src="" class="player">
-        <img src="" class="monster">
-        <img src="" class="obstaculo">
+        <img src="./imagem/monstro.png" class="monstro">
+        <img src="./imagem/mario.gif" class="mario">
+        <img src="./imagem/pipe.png" class="pipe">
+        <button id="startButton" class="start">Iniciar</button>
+    </div>
+
+    <div class="score">Pontuação: <span id="score">0</span></div>
+
+    <div id="game-over-screen" class="hiden">
+        <img id="restart-image" src="./imagem/game_over_img.png" alt="Clique para reiniciar">
     </div>
     
     <script src="main.js"></script>

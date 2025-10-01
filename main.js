@@ -18,7 +18,7 @@ let monstroLeft = -250;
 const marioSpeed = 2; 
 const monstroSpeed = 1;  
 
-startButton.addEventListener('click', startGame);
+
 
 const restartGame = () => {
     window.location.reload();
@@ -81,7 +81,7 @@ const stopMoveMario = (event) => {
 
 const startGame = () => {
     gameStarted = true;
-    audioStart.play();
+    //audioStart.play();
 
     
     pipe.style.animation = "pipe-animation 1.5s infinite linear";
@@ -98,7 +98,7 @@ const startGame = () => {
     document.addEventListener("keydown", moveMario);
     document.addEventListener("keyup", stopMoveMario);
 }
-
+startButton.addEventListener('click', startGame);
 
 const jump = () => {
     if (!gameStarted || mario.classList.contains("jump")) return; 
@@ -116,7 +116,7 @@ const updateScore = () => {
     scoreElement.textContent = score;
 
     const animationSpeed = 1.5 / (1 + score / 500);
-    pipe.style.animation = pipe-animation `${animationSpeed}s infinite linear`;
+    pipe.style.animation = `pipe-animation ${animationSpeed}s infinite linear`;
 }
 
 

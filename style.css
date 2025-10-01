@@ -17,6 +17,10 @@
     background-position: center bottom;
 }
 
+.game-board-vermelho {
+    background-image: url('./imagem.background_vermelho.png') !important;
+}
+
 .pipe,
 .mario,
 .monstro {

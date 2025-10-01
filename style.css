@@ -26,20 +26,20 @@
 
 .pipe {
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
     width: 80px;
 }
 
 .mario {
     width: 150px;
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
 }
 
 .monstro {
     width: 200px;
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
     left: -250px;
     z-index: 10;
 }
@@ -121,9 +121,9 @@ transition: opacity 2s ease-in-out, backdrop-filter 2s ease-in-out, background-c
 }
 
 @keyframes jump{
-    0% {bottom: 40px;}
-    40% {bottom: 220px;}
-    50% {bottom: 220px;}
-    60% {bottom: 220px;}
-    100% {bottom: 40px;}
+    0% {bottom: 50px;}
+    40% {bottom: 250px;}
+    50% {bottom: 250px;}
+    60% {bottom: 250px;}
+    100% {bottom: 50px;}
 }

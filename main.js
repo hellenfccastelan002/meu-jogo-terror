@@ -146,13 +146,13 @@ const loop = () => {
     monstro.style.left = `${monstroLeft}px`;
 
 
-    if (pipePosition <= marioLeft + mario.offsetWidth && pipePosition + pipe.offsetWidth >= marioLeft && marioBottomPosition < 80) {
+    if (pipePosition <= marioLeft + mario.offsetWidth && pipePosition + pipe.offsetWidth >= marioLeft && marioBottomPosition < 130) {
         
         handleGameOver({pipe: pipePosition}, marioLeft); 
     }
 
     
-    if (monstroLeft + monstro.offsetWidth - 20 >= marioLeft && monstroLeft <= marioLeft + mario.offsetWidth - 20 && marioBottomPosition < 100) {
+    if (monstroLeft + monstro.offsetWidth - 20 >= marioLeft && monstroLeft <= marioLeft + mario.offsetWidth - 20 && marioBottomPosition < 150) {
         handleGameOver({pipe: pipePosition}, marioLeft); 
     }
 

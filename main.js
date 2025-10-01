@@ -4,7 +4,7 @@ const gameOverScreen = document.getElementById("game-over-screen");
 const scoreElement = document.querySelector(".score span");
 const monstro = document.querySelector(".monstro");
 const startButton = document.getElementById("startButton"); 
-alert("O JavaScript está funcionando!");
+const gameBoard = document.querySelector(".game-board");
 
 audioStart = new Audio("./sound/audio_theme.mp3");
 const gameOverSound = new Audio("./sound/audio_gameover.mp3");
@@ -12,6 +12,7 @@ const gameOverSound = new Audio("./sound/audio_gameover.mp3");
 let gameStarted = false;
 let score = 0;
 let loopInterval; 
+let backgroundChanged = false;
 
 let marioLeft = 100; 
 let monstroLeft = -250; 
@@ -117,6 +118,11 @@ const updateScore = () => {
 
     const animationSpeed = 1.5 / (1 + score / 500);
     pipe.style.animation = `pipe-animation ${animationSpeed}s infinite linear`;
+
+    if (score >= 100 && !backgroundChanged) {
+        gameBoard.classList.add('game-board-vermelho');
+        backgroundChanged = true;
+    }
 }
 
 
